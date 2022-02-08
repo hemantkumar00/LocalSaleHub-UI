@@ -1,0 +1,38 @@
+
+
+wrapper 
+
+   <>
+      <div className="container-fluid nav_bg">
+        <div className="row">
+          <div className="col-10 mx-auto">
+		  </div>
+        </div>
+      </div>
+    </>
+
+
+
+//this line is for responsive ness
+<div className="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-xs-12 mx-auto me-4 column-to-hide">
+              
+              </div>
+					
+
+
+          setValues({
+          ...values,
+          account: {
+            email: info.result.account.email,
+            role: info.result.account.role,
+            _id: info.result.account._id,
+          },
+          cart: {
+            items: info.result.cart.items,
+          },
+          createdAt: info.result.createdAt,
+          updatedAt: info.result.updatedAt,
+          lastName: info.result.lastName,
+          firstName: info.result.firstName,
+          _id: info.result._id,
+        });
